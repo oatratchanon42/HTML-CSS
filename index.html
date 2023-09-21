@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Food Website | Ratchanon</title>
+    
+    <!-- style -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- =========== The navigator And Menu ============ -->
+    <header>
+        <a href="#" class="logo">
+            <ion-icon name="restaurant-outline"></ion-icon>
+        </a>
+        <div class="search active" onclick="toggleSearch();">
+            <ion-icon name="search-outline"></ion-icon>
+            <input type="text" placeholder="SEARCH" />
+        </div>
+        <div class="bar">
+            <ul class="nav">
+                <li><a href="#">Breakfast</a></li>
+                <li><a href="#">Lunch</a></li>
+                <li><a href="#">Dinner</a></li>
+            </ul>
+            <div class="check-out">
+                <ion-icon name="bag-outline"></ion-icon>
+                <span class="number">4</span>
+            </div>
+            <div class="menu">
+                <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+            </div>
+        </div>
+        <ul class="nav-mobile">
+                <li><a href="#">Breakfast</a></li>
+                <li><a href="#">Lunch</a></li>
+                <li><a href="#">Dinner</a></li>
+        </ul>
+    </header>
+    <!-- Banner Section -->
+    <div class="banner">
+        <div class="content">
+            <h1>Food <ion-icon name="heart-half-outline"></ion-icon></h1>
+            <h2>Lovers</h2>
+        </div>
+        <div class="imgBox">
+            <div class="food">
+                <img src="images/food-1.jpeg" alt="" class="food-img">
+            </div>
+            <div class="description">
+                <h3>Lorem, ipsum dolor.</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis iste quis impedit ex eveniet. Eveniet earum deleniti et saepe id fugiat eos fuga nihil commodi expedita! Similique nulla laboriosam eos non officiis perferendis saepe iure molestiae </p>
+                <ul class="download">
+                    <li><img src="https://e7.pngegg.com/pngimages/52/715/png-clipart-google-play-logo-google-play-computer-icons-app-store-google-text-logo.png" alt="GooglePlay"></li>
+                    <li><img src="https://e7.pngegg.com/pngimages/34/523/png-clipart-app-store-apple-logo-apple-text-logo.png" alt="AppStone"></li>
+                </ul>
+                <span class="price">$35.49</span>
+            </div>
+        </div>
+        <!-- Main Button -->
+        <a href="#" class="btn" onclick="toggleFlip()">
+            learn more <ion-icon name="search-circle-outline"></ion-icon>
+        </a>
+        <!-- Order button -->
+        <span class="order"><ion-icon name="bag-add-outline"></ion-icon></span>
+        <div class="selections">
+            <div class="circle">
+                <div class="options one" onclick="changeImg('food-1.jpeg');">
+                    <img src="images/food-1.jpeg" alt="">
+                </div>
+                <div class="options two" onclick="changeImg('food-2.jpg');">
+                    <img src="images/food-2.jpg" alt="">
+                </div>
+                <div class="options three" onclick="changeImg('food-3.jpg');">
+                    <img src="images/food-3.jpg" alt="">
+                </div>
+                
+            </div>
+            <h1>Burger Life</h1>
+        </div>
+    </div>
+    <ul class="sci">
+        <li><ion-icon name="logo-facebook"></ion-icon></li>
+        <li><ion-icon name="logo-instagram"></ion-icon></li>
+        <li><ion-icon name="logo-twitter"></ion-icon></li>
+    </ul>
+    <!-- footer section -->
+    <footer>
+        <div class="copyright">
+            &copy: Copyright <strong><span>Ratchanon</span></strong> All Right 
+        </div>
+    </footer>
+    <!-- JS -->
+    <script src="app.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
